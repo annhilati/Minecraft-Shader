@@ -1,9 +1,12 @@
 #version 120
-
 #define COLORGRADING_EFFECT 1.0 //[0.0 1.0]
 // Definiert COLORGRADING_EFFECT und beschränkt mögliche Werte auf 0 und 1
-#include "lib/grayscale.glsl"
-// Inkludiert die Graustufen Funktion
+
+vec4 grayscale(vec4 inputColor) {
+    float average = (inputColor.r + inputColor.g + inputColor.b) / 3.0;
+    return vec4(vec3(average), inputColor.a);
+}
+// Definiert die Graustufen Funktion
 
 uniform sampler2D sampler0;
 varying vec2 texcoord;
@@ -11,7 +14,7 @@ varying vec2 texcoord;
 
 void main() {
     vec4 color = texture2D(sampler0, texcoord);
-    vec4 FragColor
+    vec4 FragColor;
     // Extrahiert die Farbe des aktuellen Fragments und Definiert FragColor
 
     #if COLORGRADING_EFFECT == 1
