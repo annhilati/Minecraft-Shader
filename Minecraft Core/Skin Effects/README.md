@@ -1,4 +1,5 @@
 # Skin Effects
+###### A minecraft core shader
 ## Features
 * Adds regular blinking to all skins for which it is configured
 * Customizes the damage flash color to all skins for which it is configured
