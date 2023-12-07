@@ -48,8 +48,8 @@ void main() {
 	skinEffects = 0;
 	if(EQ(texture(Sampler0, vec2(63.0/64.0, 0.0)), vec4(117.0/255.0, 117.0/255.0, 145.0/255.0, 187.0/255.0))) skinEffects = 1; // check for a specific pixels which enables the effects
 	// get colors
-    data1Color = texture(Sampler0, vec2(62.0/64.0, 0.0)); // get data pixel #1
-    data2Color = texture(Sampler0, vec2(61.0/64.0, 0.0)); // get data pixel #2
+    data1Color = texture(Sampler0, vec2(62.0/64.0, 0.0)); // get data pixel #1 aka flsh color
+    data2Color = texture(Sampler0, vec2(61.0/64.0, 0.0)); // get data pixel #2 aka time between blinks
 	// detect if rendering face texture (=> blinking)
 	isFace = 0;
 	if(gl_VertexID >= 16 && gl_VertexID < 20) isFace = 1; // check if the vertex ids match the face
