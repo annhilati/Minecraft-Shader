@@ -1,5 +1,9 @@
 option.COLORGRADING_EFFECT=Color Grading Effekt
 option.COLORGRADING_EFFECT.comment=Farbeffekt, der den ganzen Bildschirm betrifft
+option.COORD_TEST.comment=Tests, um an bestimmte Stellen des Bildschirms bestimmte Farben zu zeichnen
 
 value.COLORGRADING_EFFECT.0=Aus
 value.COLORGRADING_EFFECT.1=Graustufen
+value.COLORGRADING_EFFECT.2=Sepia
+value.COORD_TEST.0=Aus
+value.COORD_TEST.1=An
