@@ -1,7 +1,1 @@
-.vscode/** linguist-detectable=false
-"Custom Tooltips 2/**" linguist-detectable=false
-"Custom Tooltips/**" linguist-detectable=false
-"Skin Effects/**" linguist-detectable=false
 
-*.json linguist-detectable=true
-*.properties linguist-detectable=true
