@@ -2,6 +2,6 @@
 *.properties linguist-detectable=true
 
 .vscode/** linguist-detectable=false
-"Custom Tooltips 2/"** linguist-vendored
-"Custom Tooltips/**" linguist-vendored
-"Skin Effects/**" linguist-vendored
+"Custom Tooltips 2/**" linguist-detectable=false
+"Custom Tooltips/**" linguist-detectable=false
+"Skin Effects/**" linguist-detectable=false
