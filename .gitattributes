@@ -1,3 +1,4 @@
 *.json linguist-detectable=true
 *.properties linguist-detectable=true
-*.lang linguist-detectable=true
+
+.vscode/ linguist-vendored
