@@ -1,7 +1,7 @@
 *.json linguist-detectable=true
 *.properties linguist-detectable=true
 
-#.vscode/** linguist-vendored
+.vscode/** linguist-detectable=false
 "Custom Tooltips 2/**" linguist-vendored
 "Custom Tooltips/**" linguist-vendored
 "Skin Effects/**" linguist-vendored
