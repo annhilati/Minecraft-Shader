@@ -36,3 +36,27 @@ vec4 simplify(vec4 inputColor) {
         return vec4(0.0, 0.0, 1.0, 1.0);
     }
 }
+
+vec4 vikoify(vec4 inputColor) {
+    float brightness = grayscale(inputColor).r;
+    if (brightness <= 1.0/6.0) {
+        float value = 6.0 * brightness;
+        return vec4(0.0, 0.0, value, 1.0);
+    } else if (brightness <= 2.0/6.0) {
+        float value = 6.0 * (brightness - 1.0/6.0);
+        return vec4(0.0, value, 1.0, 1.0);
+    } else if (brightness <= 3.0/6.0) {
+        float value = 1.0 - (6.0 * (brightness - 2.0/6.0));
+        return vec4(0.0, 1.0, value, 1.0);
+    } else if (brightness <= 4.0/6.0) {
+        float value = (6.0 * (brightness - 3.0/6.0));
+        return vec4(value, 1.0, 0.0, 1.0);
+    } else if (brightness <= 5.0/6.0) {
+        float value = 1.0 - (6.0 * (brightness - 4.0/6.0));
+        return vec4(1.0, value, 0.0, 1.0);
+    } else if (brightness <= 1) {
+        float value = (6.0 * (brightness - 5.0/6.0));
+        return vec4(1.0, value, value, 1.0);
+    }
+    return vec4(brightness);
+}
