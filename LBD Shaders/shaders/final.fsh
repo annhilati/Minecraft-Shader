@@ -47,13 +47,12 @@ void main() {
 
     // COORD_TEST
     #if COORD_TEST == 1
-        //if (sqrt(pow((texcoord.x - 0.2) * 16/9 , 2.0) + pow((texcoord.y - 0.2), 2.0)) <= COORD_TEST_CIRCLE) {
         if (pyDistance(texcoord, vec2(0.2), 16.0/9.0) <= COORD_TEST_CIRCLE) {
             FragColor = vec4(1, 0, 0, 1);
         }
     #elif COORD_TEST == 2
-        if (pyDistance(texcoord, vec2(0.2), 16.0/9.0) <= COORD_TEST_CIRCLE) {
-            float dst = sqrt(pow((texcoord.x - 0.5) * 16/9 , 2.0) + pow((texcoord.y - 0.5), 2.0));
+        if (pyDistance(texcoord, vec2(0.5), 16.0/9.0) <= COORD_TEST_CIRCLE) {
+            float dst = pyDistance(texcoord, vec2(0.5), 16.0/9.0);
             FragColor = FragColor * (1 - (dst - COORD_TEST_CIRCLE));
         }
     #endif
