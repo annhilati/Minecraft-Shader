@@ -1,5 +1,0 @@
-option.COLORGRADING_EFFECT=Color Grading Effekt
-option.COLORGRADING_EFFECT.comment=Farbeffekt, der den ganzen Bildschirm betrifft
-
-value.COLORGRADING_EFFECT.0=Aus
-value.COLORGRADING_EFFECT.1=Graustufen
